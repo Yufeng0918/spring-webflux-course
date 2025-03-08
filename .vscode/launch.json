@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "WebFluxPlaygroundApplication",
+      "request": "launch",
+      "mainClass": "com.vinsguru.playground.WebFluxPlaygroundApplication",
+      "projectName": "webflux-playground"
+    }
+  ]
+}

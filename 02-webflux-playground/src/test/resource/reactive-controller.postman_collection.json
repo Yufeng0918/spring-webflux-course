@@ -1,0 +1,46 @@
+{
+  "info": {
+    "name": "Reactive Web Controller",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get all products (normal response)",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/reactive/products",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["reactive", "products"]
+        }
+      }
+    },
+    {
+      "name": "Get products as server-sent events stream",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/event-stream"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/reactive/products/stream",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["reactive", "products", "stream"]
+        }
+      }
+    }
+  ]
+}
